@@ -1,0 +1,25 @@
+[core]
+	editor = vim
+
+[difftool]
+	prompt = false
+
+[alias]
+	lol = log --pretty=oneline --abbrev-commit --graph --decorate
+	lola = log --pretty=oneline --abbrev-commit --graph --decorate --all
+	t = log --graph --branches --decorate
+	tr = log --graph --branches --decorate --remotes
+	a = add
+	ch = checkout
+	c = commit
+	pl = !sh ${CUSTOM_SCRIPTS_HOME}/git_prune_local.sh
+
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+
+# by the one and only djfo: https://github.com/djfo/dotfiles/blob/master/git/gitconfig
+[include]
+	path = ~/.gitconfig.local

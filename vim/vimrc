@@ -1,0 +1,96 @@
+" Load vim-plug if not insalled 
+if empty(glob("~/.vim/autoload/plug.vim"))
+    execute '!curl -fLo ~/.vim/autoload/plug.vim https://raw.github.com/junegunn/vim-plug/master/plug.vim'
+endif
+
+""" vim-plug
+call plug#begin('~/.vim/plugged')
+
+Plug 'vim-airline/vim-airline'
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
+Plug 'w0rp/ale'
+Plug 'lervag/vimtex'
+Plug 'vimwiki/vimwiki'
+
+call plug#end()
+""" vim-plug-end
+
+syntax on
+syntax enable
+
+set wildmenu
+set visualbell 		" no sounds
+set belloff=all		" no bell at all
+
+" search stuff
+set hlsearch
+set incsearch
+
+" window splits - better movement
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
+" max textwith
+set textwidth=120
+
+" colored vertical line at column 120
+set colorcolumn=+1
+highlight ColorColumn ctermbg=0 guibg=lightgrey
+
+
+" tabs
+set shiftwidth=4
+set tabstop=4
+set softtabstop=4
+
+" statusline todo
+set laststatus=2
+
+set autoindent
+
+set mouse=a 		" enable mouse in all modes	 
+
+set showcmd
+
+set ruler
+set number			" line numbers
+set relativenumber	" relative line numbering
+set autoread 		" reload files if changed outside of vim
+
+set history=1000 	" 1000 elements saved in history 
+set nobackup 		" no tilde file generated
+
+"file stuff
+set encoding=utf-8
+
+" scrolling
+set scrolloff=8         "Start scrolling when we're 8 lines away from margins
+set sidescrolloff=15
+set sidescroll=1
+
+" NERDTree
+" close NERDTree when it is the last window open
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+" open with ctrl-n
+map <C-n> :NERDTreeToggle<CR>
+
+"Ultisnips
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+" If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"
+
+" ALE
+let g:airline#extensions#ale#enabled = 1
+
+" remap leader to space
+
+nnoremap <Space> <NOP>
+let mapleader = "\<space>"
+let maplocalleader = "\<space>"
+
