@@ -14,7 +14,7 @@ COMPLETION_WAITING_DOTS="true"
 HIST_STAMPS="yyyy-mm-dd"
 
 # oh-my-zsh plugins
-plugins=(git vagrant yarn python pip colored-man-pages docker)
+plugins=(git vagrant yarn python pip colored-man-pages docker rust cargo)
 
 source $ZSH/oh-my-zsh.sh
 
