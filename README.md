@@ -23,15 +23,15 @@ Clone the dotfiles into `$HOME/.dotfiles`.
 Install zsh and the following packages.
 
 - [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) for a good configuration, theme and plugin support.
-- [nerdfonts](https://github.com/ryanoasis/nerd-fonts) (for glyphs and coding fonts)
+- [nerdfonts](https://github.com/ryanoasis/nerd-fonts) (for glyphs and coding fonts) at least:
 	+ SauceCode Pro
 	+ FuraCode
 - [powerlevel9k](https://github.com/Powerlevel9k/powerlevel9k/wiki/Install-Instructions) zsh shell theme
-
 - [thefuck](https://github.com/nvbn/thefuck)
 - [bat](https://github.com/sharkdp/bat)
 - [lsd](https://github.com/Peltoche/lsd)
 - Link config with `ln -s $HOME/.dotfiles/zsh/zshrc $HOME/.zshrc`.
+- Use `SauceCode Pro` or `FuraCode` as font in the terminal emulator of your choice (I use gnome-terminal)
 
 ## git
 - Link config with `ln -s $HOME/.dotfiles/git/gitconfig .gitconfig`.
