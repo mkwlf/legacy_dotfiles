@@ -42,7 +42,7 @@ Install zsh and the following packages.
 I use i3 (at home) and gnome (at work) as window managers.
 
 ### i3
-- Link the config with `ln -s $HOME/.dotfiles/i3/i3config $HOME/.config/i3/i3`
+- Link the config with `ln -s $HOME/.dotfiles/i3/i3config $HOME/.config/i3/config`
 - Link the statusbar config with `ln -s $HOME/.dotfiles/i3/i3StatusConfig $HOME/.config/i3status/config`
 
 ### gnome
