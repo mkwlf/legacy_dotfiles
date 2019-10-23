@@ -1,0 +1,9 @@
+" check https://github.com/JetBrains/ideavim for more infos
+
+" map leader
+map <Space> <Leader>
+
+" reformat code
+:map \r :action ReformatCode<CR>
+:map <Ctrl-Alt-L> ReformatCode<CR>
+

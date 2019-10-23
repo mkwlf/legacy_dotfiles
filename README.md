@@ -48,3 +48,12 @@ I use i3 (at home) and gnome (at work) as window managers.
 ### gnome
 _todo_
 
+
+## Development Environments
+
+### JetBrains IDEs
+I started using the plugin [ideavim](https://github.com/JetBrains/ideavim) which can be configured via `.ideavimrc`
+file. 
+- Link via `ln -s ~/.dotfiles/ideavim/ideavimrc .ideavimrc`.
+- Link settings via `ln -s ~/.dotfiles/ideavim/vim_settings.xml .<JETBRAINS IDE>/config/options/vim_settings.xml`
+
