@@ -23,3 +23,7 @@
 # by the one and only djfo: https://github.com/djfo/dotfiles/blob/master/git/gitconfig
 [include]
 	path = ~/.gitconfig.local
+
+[fetch]
+	prune = true
+
