@@ -13,6 +13,7 @@
 	ch = checkout
 	c = commit
 	pl = !sh ${CUSTOM_SCRIPTS_HOME}/git_prune_local.sh
+	cl = !sh ${CUSTOM_SCRIPTS_HOME}/git_gitclean.sh
 
 [filter "lfs"]
 	clean = git-lfs clean -- %f
