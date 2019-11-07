@@ -3,6 +3,11 @@ A place to share my configurations across different workstations - feel free to 
 
 I use [Arch Linux](https://www.archlinux.org/) or some other [arch-based distribution](https://wiki.archlinux.org/index.php/Arch-based_distributions). 
 
+# wiki
+I also abuse this repository to store my [wiki pages](wiki/index.md) which consolidate informations i gathered around tools, coding
+tools, concepts etc.
+
+
 # Installation
 There are some packages which need to be installed in order to use these dotfiles
 
