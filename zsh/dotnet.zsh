@@ -15,3 +15,5 @@ compctl -K _dotnet_zsh_complete dotnet
 
 # alias dotnet
 alias dn="dotnet"
+
+export DOTNET_ROOT=/opt/dotnet
