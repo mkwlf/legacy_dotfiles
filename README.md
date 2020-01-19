@@ -38,6 +38,10 @@ Install zsh and the following packages.
 - Copy `git/gitconfig.local` to your home directory and change git name and email:
 `cp $HOME/.dotfiles/git/gitconfig.local $HOME/.gitconfig.local`
 
+## npm
+- Global packages will be installed into `~/.local` see [here](http://michaelb.org/the-right-way-to-do-global-npm-install-without-sudo/)
+- Link `.npmrc` with `ln -s $HOME/.dotfiles/npm/npmrc .npmrc`.
+
 ## WindowManager(s)
 I use i3 (at home) and gnome (at work) as window managers.
 

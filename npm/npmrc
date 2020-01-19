@@ -1,0 +1,2 @@
+# http://michaelb.org/the-right-way-to-do-global-npm-install-without-sudo/
+prefix=/home/mike/.local
