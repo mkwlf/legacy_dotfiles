@@ -33,6 +33,10 @@ Install zsh and the following packages.
 - Link config with `ln -s $HOME/.dotfiles/zsh/zshrc $HOME/.zshrc`.
 - Use `SauceCode Pro` or `FuraCode` as font in the terminal emulator of your choice (I use gnome-terminal)
 
+### local configurations 
+For tokens or similar secrets, which you don't want to share, add them to `zsh/local.zsh`, this file will be sourced,
+but not commited, since it is in `.gitignore`.
+
 ## git
 - Link config with `ln -s $HOME/.dotfiles/git/gitconfig .gitconfig`.
 - Copy `git/gitconfig.local` to your home directory and change git name and email:

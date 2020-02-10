@@ -47,3 +47,9 @@ eval $(thefuck --alias)
 
 ### ALIASES ###
 source ~/.dotfiles/zsh/alias.zsh
+
+### LOCAL Environment ###
+if [ -f ~/.dotfiles/zsh/local.zsh ]; then
+	source ~/.dotfiles/zsh/local.zsh
+fi
+
