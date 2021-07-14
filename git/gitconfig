@@ -1,6 +1,7 @@
 [core]
 	editor = vim
 	excludesfile = /Users/mike/.gitignore_global
+	autocrlf = input
 
 [difftool]
 	prompt = false
@@ -33,13 +34,5 @@
 	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
 
-#[user]
-#	name = Michael Wolf
-#	email = mike.wolf@antiloop.com
-
-[commit]
-	template = /Users/mike/.stCommitMsg
-
-# by the one and only djfo: https://github.com/djfo/dotfiles/blob/master/git/gitconfig
 [include]
 	path = ~/.gitconfig.local
